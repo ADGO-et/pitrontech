@@ -8,36 +8,24 @@ import { cn } from "@/lib/utils";
 
 const faqs = [
     {
-        q: "What industries do you specialize in?",
-        a: "We serve clients across fintech, logistics, e-commerce, education, healthcare, and government sectors. Our enterprise practice is especially strong in financial services and supply chain.",
+        q: "What industries does PitronTech serve?",
+        a: "We primarily serve financial institutions, SACCOs, government agencies, and private enterprises requiring secure, compliant, and scalable software systems.",
     },
     {
-        q: "Do you work with early-stage startups?",
-        a: "Yes. We work with both enterprise clients and high-growth startups who need to move fast without sacrificing quality. We tailor our engagement model to your stage.",
+        q: "Do you build custom ERP systems?",
+        a: "Yes. We design and implement fully customized ERP platforms covering finance, HR, supply chain, operations, compliance, and reporting.",
     },
     {
-        q: "How do you price your services?",
-        a: "We offer both fixed-price project engagements and monthly retainer-based team augmentation. We will provide a detailed proposal after understanding your requirements.",
+        q: "Are your systems compliant with regulatory requirements?",
+        a: "Yes. We engineer systems with compliance in mind, including financial reporting standards, audit requirements, and regulatory integrations based on the client's industry.",
     },
     {
-        q: "What is your typical project timeline?",
-        a: "MVPs typically take 8–14 weeks. Full enterprise products take 3–9 months. We structure all projects with clear milestones and weekly deliverables.",
+        q: "Do you provide cloud or on-premise deployment?",
+        a: "We support both. Systems can be deployed on Azure, AWS, Google Cloud, or on-premise environments depending on client requirements.",
     },
     {
-        q: "Do you offer post-launch support and maintenance?",
-        a: "Yes. We offer SLA-backed support plans, pro-active monitoring, and ongoing maintenance retainers. Many of our clients have been with us for 2+ years post-launch.",
-    },
-    {
-        q: "Are your teams fully remote?",
-        a: "Yes. Our entire team is remote-first and distributed across Ethiopia and East Africa. We operate on flexible schedules that allow collaboration across time zones.",
-    },
-    {
-        q: "What technologies do you use?",
-        a: "Our primary stack includes React/Next.js (frontend), Node.js/NestJS/Go/Python (backend), React Native/Flutter (mobile), and Azure/AWS/GCP (cloud). We adapt to client requirements.",
-    },
-    {
-        q: "How do I start a project with PitronTech?",
-        a: "Send us a message via our contact page or email hello@pitrontech.com. We will schedule a discovery call, understand your requirements, and send a proposal within 48 hours.",
+        q: "Do you offer post-implementation support?",
+        a: "Yes. We provide ongoing technical support, maintenance, system optimization, and long-term partnership models.",
     },
 ];
 

@@ -11,10 +11,10 @@ import * as Icons from "lucide-react";
 type IconName = keyof typeof Icons;
 
 const featuredServices = [
-    services.find(s => s.id === "android-app"),
-    services.find(s => s.id === "backend"),
-    services.find(s => s.id === "frontend"),
-    services.find(s => s.id === "ecommerce"),
+    services.find(s => s.id === "enterprise-erp"),
+    services.find(s => s.id === "saas-platform"),
+    services.find(s => s.id === "fintech-solutions"),
+    services.find(s => s.id === "cloud-devops"),
 ].filter(Boolean) as typeof services;
 
 export default function FeaturedServices() {
@@ -42,7 +42,7 @@ export default function FeaturedServices() {
     }, []);
 
     return (
-        <section className="py-24 relative bg-[var(--background)] dark:bg-[#051114] overflow-hidden rounded-tr-[100px] rounded-bl-[100px] my-12 mx-4 md:mx-8 transition-colors duration-500">
+        <section className="py-24 relative bg-[#f0f8fa] dark:bg-[#051114] overflow-hidden rounded-tr-[100px] rounded-bl-[100px] my-12 mx-4 md:mx-8 transition-colors duration-500">
             {/* Abstract Graphic Bottom Left */}
             <div className="absolute -bottom-20 -left-20 w-80 h-80 opacity-80 pointer-events-none">
                 <div className="absolute bottom-10 left-10 w-40 h-40 bg-[#1d505e] rounded-full" />
@@ -60,13 +60,13 @@ export default function FeaturedServices() {
                     {/* Left: Header */}
                     <SectionReveal className="text-left">
                         <h2 className="font-display font-bold text-5xl md:text-6xl text-[var(--text-heading)] dark:text-white mb-6 leading-[1.1]">
-                            Intelligent<br />
-                            Applications<br />
-                            <span className="text-[#113037] dark:text-[#1d505e]">for Complex</span><br />
-                            Operations
+                            Core<br />
+                            Capabilities<br />
+                            <span className="text-[#113037] dark:text-[#1d505e]">for Enterprise</span><br />
+                            Systems
                         </h2>
                         <p className="text-[var(--text-muted)] dark:text-gray-400 max-w-md text-lg">
-                            From product conception to production deployment, we deliver end-to-end software solutions built for enterprise scale.
+                            We build secure, scalable, and future-ready digital systems with deep technical expertise and measurable business outcomes.
                         </p>
                         <Link href="/services" className="inline-flex items-center gap-2 mt-10 text-[#1d505e] dark:text-[#0ea5e9] font-semibold hover:gap-3 transition-all">
                             View All Services <ArrowRight className="w-4 h-4" />

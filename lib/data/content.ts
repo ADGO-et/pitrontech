@@ -4,8 +4,10 @@ export const testimonials = [
     name: "Abebe Worku",
     role: "CEO, YehuluSaccos",
     company: "YehuluSaccos",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop",
-    quote: "PitronTech delivered our entire digital transformation — mobile app, ERP, and field collection tools — on time and beyond our expectations. Their engineering quality is world-class.",
+    avatar:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop",
+    quote:
+      "PitronTech delivered our entire digital transformation — mobile app, ERP, and field collection tools — on time and beyond our expectations. Their engineering quality is world-class.",
     rating: 5,
   },
   {
@@ -13,8 +15,10 @@ export const testimonials = [
     name: "Lemlem Tadesse",
     role: "Operations Director, Noble Lemat",
     company: "Noble Lemat",
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop",
-    quote: "The fleet management and marketplace platforms PitronTech built have fundamentally changed how we operate. Real-time visibility across our entire supply chain is game-changing.",
+    avatar:
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop",
+    quote:
+      "The fleet management and marketplace platforms PitronTech built have fundamentally changed how we operate. Real-time visibility across our entire supply chain is game-changing.",
     rating: 5,
   },
   {
@@ -22,8 +26,10 @@ export const testimonials = [
     name: "Tesfaye Bekele",
     role: "CTO, FinBridge Ethiopia",
     company: "FinBridge",
-    avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&auto=format&fit=crop",
-    quote: "We needed a fintech-grade backend that could handle thousands of transactions per second. PitronTech's team delivered a bulletproof system that's been running flawlessly for 18 months.",
+    avatar:
+      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&auto=format&fit=crop",
+    quote:
+      "We needed a fintech-grade backend that could handle thousands of transactions per second. PitronTech's team delivered a bulletproof system that's been running flawlessly for 18 months.",
     rating: 5,
   },
   {
@@ -31,142 +37,138 @@ export const testimonials = [
     name: "Hanna Girma",
     role: "Product Lead, AgriConnect",
     company: "AgriConnect",
-    avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&auto=format&fit=crop",
-    quote: "The UI/UX design quality from PitronTech is phenomenal. They don't just build — they think deeply about user journeys and business outcomes. Highly recommended.",
+    avatar:
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&auto=format&fit=crop",
+    quote:
+      "The UI/UX design quality from PitronTech is phenomenal. They don't just build — they think deeply about user journeys and business outcomes. Highly recommended.",
     rating: 5,
   },
 ];
 
 export const blogPosts = [
   {
-    id: "nextjs-enterprise",
-    title: "Building Enterprise SaaS with Next.js 15 App Router",
-    excerpt: "How we leverage server components, streaming, and edge rendering to build high-performance enterprise SaaS platforms.",
-    category: "Engineering",
+    id: "erp-implementation-blueprint",
+    title: "ERP Implementation Blueprint for Growing Enterprises",
+    excerpt:
+      "A practical roadmap for delivering ERP systems that improve operational efficiency, reporting accuracy, and cross-department visibility.",
+    category: "ERP",
     author: "Yonas Tesfaye",
     date: "2026-02-10",
     readTime: "8 min",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop",
     featured: true,
-    tags: ["Next.js", "SaaS", "Architecture"],
+    tags: ["ERP", "Implementation", "Enterprise"],
   },
   {
-    id: "gsap-web-animations",
-    title: "GSAP ScrollTrigger: The Complete Enterprise Guide",
-    excerpt: "Production patterns for scroll-based animations that maintain 60fps performance across millions of page views.",
-    category: "Frontend",
+    id: "enterprise-architecture-patterns",
+    title: "Enterprise Architecture Patterns for Scalable Systems",
+    excerpt:
+      "Designing modular, secure, and resilient architecture for mission-critical platforms across finance, government, and private sector organizations.",
+    category: "Architecture",
     author: "Mekdes Alemu",
     date: "2026-01-28",
     readTime: "12 min",
-    image: "https://images.unsplash.com/photo-1550439062-609e1531270e?w=800&auto=format&fit=crop",
-    featured: false,
-    tags: ["GSAP", "Animation", "Performance"],
+    image:
+      "https://images.unsplash.com/photo-1550439062-609e1531270e?w=800&auto=format&fit=crop",
+    featured: true,
+    tags: ["Architecture", "Scalability", "Security"],
   },
   {
-    id: "microservices-nestjs",
-    title: "Microservices at Scale: Production Lessons from NestJS",
-    excerpt: "Real-world patterns for building resilient microservice architectures with NestJS, message queues, and distributed tracing.",
-    category: "Backend",
+    id: "devops-best-practices",
+    title: "DevOps Best Practices for Zero-Downtime Delivery",
+    excerpt:
+      "How CI/CD automation, infrastructure as code, and continuous monitoring improve release reliability for enterprise teams.",
+    category: "DevOps",
     author: "Henok Mulugeta",
     date: "2026-01-15",
     readTime: "15 min",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop",
-    featured: false,
-    tags: ["NestJS", "Microservices", "Node.js"],
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop",
+    featured: true,
+    tags: ["DevOps", "CI/CD", "Observability"],
   },
   {
-    id: "erp-africa",
-    title: "ERP Implementation for African Enterprises: Key Learnings",
-    excerpt: "Challenges and solutions from delivering ERP systems across Ethiopia, Kenya, and Uganda — from connectivity constraints to local compliance.",
-    category: "Enterprise",
+    id: "fintech-security-controls",
+    title: "Fintech Security Controls for High-Trust Platforms",
+    excerpt:
+      "A guide to transaction integrity, auditability, and compliance-by-design in payment, lending, and SACCO platforms.",
+    category: "Fintech",
     author: "Dawit Girma",
     date: "2025-12-20",
     readTime: "10 min",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
     featured: false,
-    tags: ["ERP", "Enterprise", "Africa"],
+    tags: ["Fintech", "Security", "Compliance"],
   },
   {
-    id: "devops-azure",
-    title: "Zero-Downtime Deployments on Azure with GitHub Actions",
-    excerpt: "A complete CI/CD pipeline tutorial for Azure Container Apps with blue-green deployments and automated rollbacks.",
-    category: "DevOps",
+    id: "saas-engineering-at-scale",
+    title: "Scalable SaaS Engineering: Multi-Tenant by Design",
+    excerpt:
+      "Key decisions for multi-tenant architecture, subscription billing, performance optimization, and secure tenant isolation.",
+    category: "SaaS",
     author: "Robel Tekeste",
     date: "2025-12-05",
     readTime: "11 min",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop",
     featured: false,
-    tags: ["Azure", "DevOps", "CI/CD"],
-  },
-  {
-    id: "ux-enterprise",
-    title: "Enterprise UX: Designing for Power Users Without Compromise",
-    excerpt: "How to create interfaces that are both beautiful and functional for enterprise workflows with complex data and actions.",
-    category: "Design",
-    author: "Sara Bekele",
-    date: "2025-11-22",
-    readTime: "9 min",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop",
-    featured: false,
-    tags: ["UX", "Enterprise", "Design Systems"],
+    tags: ["SaaS", "Multi-Tenancy", "Architecture"],
   },
 ];
 
 export const blogCategories = [
   { id: "all", label: "All Posts" },
-  { id: "Engineering", label: "Engineering" },
-  { id: "Frontend", label: "Frontend" },
-  { id: "Backend", label: "Backend" },
+  { id: "ERP", label: "ERP" },
+  { id: "Architecture", label: "Architecture" },
   { id: "DevOps", label: "DevOps" },
-  { id: "Enterprise", label: "Enterprise" },
-  { id: "Design", label: "Design" },
+  { id: "Fintech", label: "Fintech" },
+  { id: "SaaS", label: "SaaS" },
 ];
 
 export const focuses = [
   {
     id: "enterprise",
     title: "Enterprise Solutions",
-    description: "We build mission-critical systems that enterprises depend on — from ERP platforms to internal tooling and large-scale data pipelines. Our solutions are built for reliability, security, and compliance.",
+    description:
+      "Large-scale enterprise system architecture, secure deployments, and operational transformation platforms.",
     icon: "Building2",
     color: "#C4B5FD",
-    stats: "50+ enterprise deployments",
-  },
-  {
-    id: "saas",
-    title: "Scalable SaaS Platforms",
-    description: "Multi-tenant SaaS platforms that grow from zero to millions of users. We design architecture that scales horizontally, with subscription billing, usage metering, and white-label capabilities.",
-    icon: "Cloud",
-    color: "#4ADE80",
-    stats: "12+ SaaS products launched",
+    stats: "Enterprise-grade architecture",
   },
   {
     id: "fintech",
     title: "Fintech Systems",
-    description: "Financial technology solutions that meet the highest standards of security and compliance. From payment gateways to SACCO management, lending platforms, and mobile money integrations.",
+    description:
+      "Financial-grade systems engineered for compliance, auditability, and transaction integrity.",
     icon: "CreditCard",
     color: "#F59E0B",
-    stats: "$500M+ transactions facilitated",
+    stats: "Security & compliance first",
   },
   {
     id: "erp",
     title: "ERP Systems",
-    description: "Custom ERP systems that unify your finance, HR, supply chain, and operations. We deliver enterprise resource planning that actually fits your business — not the other way around.",
+    description:
+      "Modular ERP implementations with industry-specific customization.",
     icon: "LayoutGrid",
     color: "#FB923C",
-    stats: "8 ERP systems delivered",
+    stats: "Scalable, modular systems",
   },
   {
     id: "cloud",
     title: "Cloud Infrastructure",
-    description: "Cloud-native infrastructure on Azure, AWS, and GCP. Container orchestration, serverless architectures, multi-region deployments, and infrastructure-as-code for modern engineering teams.",
+    description:
+      "Highly available, secure, and scalable cloud deployments across Azure, AWS, and Google Cloud.",
     icon: "Server",
     color: "#38BDF8",
-    stats: "99.99% uptime achieved",
+    stats: "Long-term technical partnership",
   },
   {
     id: "devops",
     title: "DevOps Automation",
-    description: "CI/CD pipelines, automated testing, monitoring, and observability. We help engineering teams ship faster with confidence through GitOps, infrastructure automation, and SRE practices.",
+    description:
+      "CI/CD pipelines, automated testing, monitoring, and observability. We help engineering teams ship faster with confidence through GitOps, infrastructure automation, and SRE practices.",
     icon: "GitBranch",
     color: "#F472B6",
     stats: "10x faster deployments",

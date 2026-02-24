@@ -73,9 +73,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 <section className="max-w-3xl mx-auto px-6">
                     <SectionReveal>
                         <div className="prose prose-lg prose-invert max-w-none">
-                            <p className="text-[var(--text-muted)] leading-relaxed text-lg mb-6">
-                                This is a placeholder for the full blog post content. In a real application, this content would be fetched from a CMS like Sanity, Contentful, or a markdown file.
-                            </p>
                             <h2 className="text-2xl font-bold text-[var(--text-heading)] mt-10 mb-4">The Challenge</h2>
                             <p className="text-[var(--text-muted)] leading-relaxed mb-6">
                                 Enterprise software development is complex. It requires a deep understanding of business processes, scalable architecture, and a focus on user experience. Many companies struggle to balance these requirements while moving fast.

@@ -2,15 +2,15 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight, Play } from "lucide-react";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
+import HeroGraphic from "./HeroGraphic";
 
 const HERO_STATS = [
-    { target: 50, suffix: "+", label: "Projects Delivered" },
-    { target: 12, suffix: "+", label: "SaaS Products" },
-    { target: 99.9, suffix: "%", label: "Uptime Achieved" },
-    { target: 5, suffix: "+", label: "Years Excellence" },
+    { target: 4, suffix: "+", label: "Core Verticals" },
+    { target: 5, suffix: "+", label: "Core Capabilities" },
+    { target: 99.9, suffix: "%", label: "Platform Reliability" },
+    { target: 1, suffix: "", label: "Long-Term Partner" },
 ];
 
 export default function HeroSection() {
@@ -114,22 +114,7 @@ export default function HeroSection() {
         >
             {/* === RIGHT SIDE IMAGE WITH FADE === */}
             <div className="absolute top-1/2 -translate-y-1/2 right-[-5%] w-full lg:w-[55%] h-[85%] opacity-40 lg:opacity-100 pointer-events-none">
-                {/* Gradient masks to blend the image into the background */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[var(--hero-bg)] via-[var(--hero-bg)]/90 to-transparent z-10 lg:via-[var(--hero-bg)]/40" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--hero-bg)] via-transparent to-[var(--hero-bg)] z-10" />
-                <div className="absolute inset-0 bg-gradient-to-b from-[var(--hero-bg)] via-transparent to-transparent z-10" />
-                
-                {/* Stronger left fade to remove hard edge */}
-                <div className="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[var(--hero-bg)] to-transparent z-10" />
-                
-                <Image 
-                    src="/images/dev-8.webp" 
-                    alt="Software Engineering Team" 
-                    fill 
-                    className="object-cover object-center lg:object-right" 
-                    unoptimized 
-                    priority
-                />
+                <HeroGraphic />
             </div>
 
             {/* === HERO CONTENT === */}
@@ -147,34 +132,32 @@ export default function HeroSection() {
                         {/* Main Headline */}
                         <h1 ref={headlineRef} className="font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] leading-[1.05] tracking-tight mb-6">
                             <div className="overflow-hidden pb-2">
-                                <span className="hero-line block text-[var(--text-heading)]">Accelerate Your</span>
+                                <span className="hero-line block text-[var(--text-heading)]">Enterprise Software</span>
                             </div>
                             <div className="overflow-hidden pb-2">
-                                <span className="hero-line block text-[var(--text-heading)]">
-                                    Roadmap With Our
-                                </span>
+                                <span className="hero-line block text-[var(--text-heading)]">Engineering</span>
                             </div>
                             <div className="overflow-hidden pb-2">
                                 <span className="hero-line block gradient-text text-glow">
-                                    Vetted Engineers
+                                    Excellence
                                 </span>
                             </div>
                         </h1>
 
                         {/* Sub headline */}
                         <p ref={subRef} className="text-[var(--text-muted)] text-lg sm:text-xl max-w-2xl mb-10 leading-relaxed">
-                            Access timezone-aligned software engineers with experience in AI, Cloud, and 100+ other technologies. We build world-class solutions that uniquely fit your needs.
+                            PitronTech is a leading enterprise software engineering company delivering ERP systems, scalable SaaS platforms, fintech-grade applications, and cloud-native solutions.
                         </p>
 
                         {/* CTA Buttons */}
                         <div ref={ctaRef} className="flex flex-col sm:flex-row items-start gap-4 mb-16">
                             <Link href="/contact" className="cta-btn btn-primary flex items-center justify-center gap-2 text-base px-8 py-4 rounded-full font-bold text-white transition-all duration-300 hover:-translate-y-1">
-                                Schedule a Call
+                                Schedule a Consultation
                                 <ArrowRight className="w-4 h-4" />
                             </Link>
                             <Link href="/work" className="cta-btn btn-outline flex items-center justify-center gap-2 text-base px-8 py-4 rounded-full font-bold transition-all duration-300 hover:-translate-y-1">
                                 <Play className="w-4 h-4" />
-                                View Our Work
+                                Explore Our Work
                             </Link>
                         </div>
 

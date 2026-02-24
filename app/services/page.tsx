@@ -52,10 +52,10 @@ export default function ServicesPage() {
                             Services
                         </div>
                         <h1 className="font-display font-black text-5xl md:text-7xl text-[var(--text-heading)] mb-6">
-                            What We <span className="gradient-text">Build</span>
+                            Enterprise <span className="gradient-text">Services</span>
                         </h1>
                         <p className="text-[var(--text-muted)] text-xl max-w-2xl mx-auto">
-                            From mobile apps to enterprise ERP systems — we deliver across the full spectrum of modern software.
+                            Enterprise ERP development, SaaS platform engineering, fintech solutions, cloud DevOps, and custom web/mobile applications.
                         </p>
                     </SectionReveal>
                 </div>
@@ -126,13 +126,13 @@ export default function ServicesPage() {
                         <div className="relative grid md:grid-cols-2 gap-8 items-center">
                             <div>
                                 <h2 className="font-display font-bold text-3xl md:text-4xl text-[var(--text-heading)] mb-4">
-                                    Need Enterprise-Scale Solutions?
+                                    Need Mission-Critical Delivery?
                                 </h2>
                                 <p className="text-[var(--text-muted)] mb-6">
-                                    Our enterprise practice is specialized in delivering mission-critical systems for large organizations.
+                                    We design, build, and scale secure systems for organizations across finance, government, and private sectors.
                                 </p>
                                 <Link href="/contact" className="btn-primary inline-flex items-center gap-2">
-                                    Talk to Enterprise Team →
+                                    Request a Consultation →
                                 </Link>
                             </div>
                             <div className="grid grid-cols-2 gap-4">

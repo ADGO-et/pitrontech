@@ -10,11 +10,14 @@ export default function CultureHighlight() {
             <div className="max-w-7xl mx-auto px-6">
                 <SectionReveal className="text-center mb-14">
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[rgba(29,80,94,0.15)] text-[#1d505e] text-xs font-semibold tracking-wider uppercase mb-4">
-                        Our Culture
+                        About Snapshot
                     </div>
                     <h2 className="font-display font-bold text-4xl md:text-5xl text-[var(--text-heading)]">
-                        The PitronTech <span className="gradient-text">Way</span>
+                        Why <span className="gradient-text">PitronTech</span>
                     </h2>
+                    <p className="text-[var(--text-muted)] max-w-3xl mx-auto mt-5 text-lg leading-relaxed">
+                        We partner with forward-thinking organizations to build secure, scalable, and future-ready digital systems. Our engineering teams combine deep technical expertise with strong business understanding to deliver measurable outcomes.
+                    </p>
                 </SectionReveal>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

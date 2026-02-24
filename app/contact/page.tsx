@@ -55,10 +55,10 @@ export default function ContactPage() {
                             Contact
                         </div>
                         <h1 className="font-display font-black text-5xl md:text-7xl text-[var(--text-heading)] mb-6">
-                            Let&apos;s <span className="gradient-text">Chat</span>
+                            Request a <span className="gradient-text">Consultation</span>
                         </h1>
                         <p className="text-[var(--text-muted)] text-xl max-w-xl mx-auto">
-                            Have a project in mind? We&apos;d love to hear from you. Our team typically responds within 24 hours.
+                            Email us at info@pitrontech.et, call +251 911 000 000, or visit us in Addis Ababa, Ethiopia.
                         </p>
                     </SectionReveal>
                 </div>
@@ -74,13 +74,13 @@ export default function ContactPage() {
                                 <div className="glass-card rounded-2xl p-6">
                                     <h2 className="font-display font-bold text-xl text-[var(--text-heading)] mb-5">Get In Touch</h2>
                                     <div className="flex flex-col gap-5">
-                                        <a href="mailto:hello@pitrontech.com" className="flex items-start gap-3 group">
+                                        <a href="mailto:info@pitrontech.et" className="flex items-start gap-3 group">
                                             <div className="w-10 h-10 rounded-xl bg-[rgba(29,80,94,0.08)] border border-[rgba(29,80,94,0.12)] flex items-center justify-center flex-shrink-0">
                                                 <Mail className="w-5 h-5 text-[#1d505e]" />
                                             </div>
                                             <div>
                                                 <p className="text-xs text-[#4a7a88] uppercase tracking-wider mb-0.5">Email</p>
-                                                <p className="text-[var(--text-heading)] text-sm group-hover:text-[#1d505e] transition-colors">hello@pitrontech.com</p>
+                                                <p className="text-[var(--text-heading)] text-sm group-hover:text-[#1d505e] transition-colors">info@pitrontech.et</p>
                                             </div>
                                         </a>
                                         <a href="tel:+251911000000" className="flex items-start gap-3 group">
@@ -155,7 +155,7 @@ export default function ContactPage() {
                                     </div>
                                 ) : (
                                     <form onSubmit={handleSubmit} className="glass-card rounded-2xl p-8 flex flex-col gap-6">
-                                        <h2 className="font-display font-bold text-xl text-[var(--text-heading)] mb-2">Start a Conversation</h2>
+                                        <h2 className="font-display font-bold text-xl text-[var(--text-heading)] mb-2">Request a Consultation</h2>
 
                                         {/* Name + Email row */}
                                         <div className="grid sm:grid-cols-2 gap-5">
@@ -211,12 +211,11 @@ export default function ContactPage() {
                                                 className="w-full bg-[rgba(29,80,94,0.04)] border border-[rgba(29,80,94,0.15)] rounded-xl px-4 py-4 text-[var(--text-heading)] text-sm focus:outline-none focus:border-[rgba(29,80,94,0.4)] transition-all appearance-none"
                                             >
                                                 <option value="" className="bg-[var(--background)]">Service of Interest</option>
-                                                <option value="web" className="bg-[var(--background)]">Web Development</option>
-                                                <option value="mobile" className="bg-[var(--background)]">Mobile App Development</option>
-                                                <option value="saas" className="bg-[var(--background)]">SaaS Development</option>
-                                                <option value="erp" className="bg-[var(--background)]">ERP Development</option>
-                                                <option value="devops" className="bg-[var(--background)]">DevOps & Cloud</option>
-                                                <option value="design" className="bg-[var(--background)]">UI/UX Design</option>
+                                                <option value="erp" className="bg-[var(--background)]">Enterprise ERP Development</option>
+                                                <option value="saas" className="bg-[var(--background)]">SaaS Platform Development</option>
+                                                <option value="fintech" className="bg-[var(--background)]">Fintech Solutions</option>
+                                                <option value="cloud" className="bg-[var(--background)]">Cloud &amp; DevOps Engineering</option>
+                                                <option value="apps" className="bg-[var(--background)]">Custom Web &amp; Mobile Applications</option>
                                                 <option value="other" className="bg-[var(--background)]">Other</option>
                                             </select>
                                         </div>
@@ -255,7 +254,7 @@ export default function ContactPage() {
                                             ) : (
                                                 <>
                                                     <Send className="w-4 h-4" />
-                                                    Send Message
+                                                    Request a Consultation
                                                 </>
                                             )}
                                         </button>
