@@ -6,7 +6,7 @@ import WorkflowSection from "@/components/home/WorkflowSection";
 import LifecycleSection from "@/components/home/LifecycleSection";
 import SelectedProjects from "@/components/home/SelectedProjects";
 import CultureHighlight from "@/components/home/CultureHighlight";
-import Testimonials from "@/components/home/Testimonials";
+// import Testimonials from "@/components/home/Testimonials";
 import CTASection from "@/components/home/CTASection";
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function HomePage() {
       <LifecycleSection />
       <SelectedProjects />
       <CultureHighlight />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <CTASection />
     </>
   );
