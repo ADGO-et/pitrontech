@@ -10,9 +10,9 @@ import Testimonials from "@/components/home/Testimonials";
 import CTASection from "@/components/home/CTASection";
 
 export const metadata: Metadata = {
-  title: "PitronTech — Enterprise Software Development Company",
+  title: "PitronTech — Enterprise Software Engineering Excellence",
   description:
-    "PitronTech builds world-class enterprise software: web apps, mobile apps, SaaS platforms, ERP systems, and cloud infrastructure for ambitious companies.",
+    "PitronTech delivers ERP systems, scalable SaaS platforms, fintech-grade applications, and cloud-native solutions for forward-thinking organizations.",
 };
 
 export default function HomePage() {

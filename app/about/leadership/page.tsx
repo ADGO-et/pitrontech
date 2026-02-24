@@ -30,11 +30,11 @@ export default function LeadershipPage() {
                         </p>
                     </SectionReveal>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
                         {leaders.map((member, i) => (
-                            <SectionReveal key={member.id} delay={i * 0.12} direction="up">
-                                <div className="glass-card rounded-3xl overflow-hidden group hover:border-[rgba(29,80,94,0.25)] transition-all duration-500 hover:shadow-[0_0_60px_rgba(29,80,94,0.08)] hover:-translate-y-2">
-                                    <div className="relative h-80 overflow-hidden">
+                            <SectionReveal key={member.id} delay={i * 0.12} direction="up" className="h-full">
+                                <div className="glass-card rounded-3xl overflow-hidden group hover:border-[rgba(29,80,94,0.25)] transition-all duration-500 hover:shadow-[0_0_60px_rgba(29,80,94,0.08)] hover:-translate-y-2 flex flex-col items-center text-center p-6 h-full">
+                                    <div className="relative w-40 h-40 rounded-full overflow-hidden mb-6 border-4 border-[var(--background)] shadow-lg shrink-0">
                                         <Image
                                             src={member.image}
                                             alt={member.name}
@@ -42,19 +42,18 @@ export default function LeadershipPage() {
                                             className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                                             unoptimized
                                         />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-[var(--background)] via-[var(--background)]/10 to-transparent" />
                                     </div>
-                                    <div className="p-6">
-                                        <h2 className="font-display font-bold text-xl text-[var(--text-heading)] mb-0.5">{member.name}</h2>
-                                        <p className="text-[#1d505e] text-sm font-semibold mb-3">{member.role}</p>
-                                        <p className="text-[var(--text-muted)] text-sm leading-relaxed mb-4">{member.bio}</p>
-                                        <div className="flex items-center gap-2">
+                                    <div className="flex-1 flex flex-col items-center">
+                                        <h2 className="font-display font-bold text-xl text-[var(--text-heading)] mb-1">{member.name}</h2>
+                                        <p className="text-[#1d505e] text-sm font-semibold mb-4">{member.role}</p>
+                                        <p className="text-[var(--text-muted)] text-sm leading-relaxed mb-6 flex-1">{member.bio}</p>
+                                        <div className="flex items-center gap-3 mt-auto">
                                             <a href={member.linkedin} aria-label="LinkedIn"
-                                                className="w-8 h-8 glass rounded-lg flex items-center justify-center text-[var(--text-muted)] hover:text-[#1d505e] transition-colors">
+                                                className="w-10 h-10 glass rounded-full flex items-center justify-center text-[var(--text-muted)] hover:text-[#1d505e] hover:bg-[rgba(29,80,94,0.1)] transition-all">
                                                 <Linkedin className="w-4 h-4" />
                                             </a>
                                             <a href={member.twitter} aria-label="Twitter"
-                                                className="w-8 h-8 glass rounded-lg flex items-center justify-center text-[var(--text-muted)] hover:text-[#1d505e] transition-colors">
+                                                className="w-10 h-10 glass rounded-full flex items-center justify-center text-[var(--text-muted)] hover:text-[#1d505e] hover:bg-[rgba(29,80,94,0.1)] transition-all">
                                                 <Twitter className="w-4 h-4" />
                                             </a>
                                         </div>

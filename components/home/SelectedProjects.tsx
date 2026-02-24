@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 import { projects } from "@/lib/data/projects";
 import SectionReveal from "@/components/shared/SectionReveal";
 
-const featured = projects.filter((p) => p.featured);
+const featured = projects.filter((p) => p.id.startsWith("noble-lemat"));
 
 export default function SelectedProjects() {
     return (

@@ -7,7 +7,7 @@ type IconName = keyof typeof Icons;
 
 export const metadata: Metadata = {
     title: "Focuses | PitronTech",
-    description: "Our specialized focus areas: Enterprise Solutions, SaaS, Fintech, ERP, Cloud, and DevOps.",
+    description: "Our specialized focus areas: Enterprise Solutions, Fintech Systems, ERP Systems, Cloud Infrastructure, and DevOps Automation.",
 };
 
 export default function FocusesPage() {
@@ -38,17 +38,17 @@ export default function FocusesPage() {
                     <div className="max-w-3xl text-center lg:text-left">
                         <SectionReveal trigger={false}>
                             <div className="text-[#1d505e] text-sm font-bold tracking-[0.2em] uppercase mb-6">
-                                Enterprise Software Solutions
+                                Focus Areas
                             </div>
                             <h1 className="font-display font-black text-3xl md:text-4xl lg:text-5xl text-[var(--text-heading)] mb-8 leading-tight">
-                                High-Performance Engineering Solutions You&apos;ll Actually Use
+                                Specialized Enterprise Engineering Focuses
                             </h1>
                             <p className="text-[var(--text-muted)] text-md md:text-lg mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                                At PitronTech, we know the complexities and nuances of enterprise software development, and we&apos;re here to be your partner in building systems to help you scale better.
+                                We deliver large-scale enterprise architecture, fintech-grade systems, modular ERP implementations, cloud infrastructure, and DevOps automation.
                             </p>
                             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
                                 <a href="/contact" className="px-8 py-4 rounded-full bg-[#1d505e] text-white font-bold hover:bg-[#113037] transition-colors shadow-lg hover:shadow-xl">
-                                    Schedule a Discovery Call
+                                    Schedule a Consultation
                                 </a>
                             </div>
                         </SectionReveal>
@@ -121,7 +121,7 @@ export default function FocusesPage() {
                         </h2>
                     </SectionReveal>
 
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 auto-rows-fr">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 auto-rows-fr max-w-6xl mx-auto">
                         {focuses.map((f, i) => {
                             const IconComp = (Icons[f.icon as IconName] || Icons.Star) as React.ElementType;
                             return (

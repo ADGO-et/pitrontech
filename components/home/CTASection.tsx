@@ -19,23 +19,23 @@ export default function CTASection() {
 
                     <SectionReveal direction="up">
                         <p className="text-[#1d505e] text-sm font-semibold tracking-[0.2em] uppercase mb-4">
-                            Ready to Start?
+                            Call to Action
                         </p>
                         <h2 className="font-display font-black text-4xl md:text-6xl text-[var(--text-heading)] leading-tight mb-6">
-                            Let&apos;s Build Your<br />
-                            <span className="gradient-text">Next Big Thing</span>
+                            Ready to build your<br />
+                            <span className="gradient-text">next enterprise system?</span>
                         </h2>
                         <p className="text-[var(--text-muted)] max-w-xl mx-auto text-lg mb-10">
-                            From initial concept to production launch — we partner with you every step of the way. Let&apos;s talk about your project.
+                            Let&apos;s discuss your project.
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                             <Link href="/contact" className="btn-primary flex items-center gap-2 text-base px-10 py-4">
-                                Start a Conversation
+                                Schedule a Consultation
                                 <ArrowRight className="w-4 h-4" />
                             </Link>
                             <Link href="/work" className="btn-outline flex items-center gap-2 text-base px-10 py-4">
-                                See Our Portfolio
+                                Explore Our Work
                             </Link>
                         </div>
                     </SectionReveal>

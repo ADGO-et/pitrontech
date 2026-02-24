@@ -9,13 +9,13 @@ export const metadata: Metadata = {
 
 export default function InsidePage() {
     const milestones = [
-        { year: "2019", title: "Founded", desc: "PitronTech was founded with the mission to bring world-class software engineering to Ethiopian enterprises." },
-        { year: "2020", title: "First Enterprise Client", desc: "Delivered a full ERP system for a major financial institution, setting the standard for our enterprise practice." },
-        { year: "2021", title: "Mobile Division Launched", desc: "Expanded into mobile app development, building apps for iOS and Android at native quality." },
-        { year: "2022", title: "Cloud & DevOps Practice", desc: "Launched our cloud and DevOps service line, helping clients migrate to Azure, AWS, and GCP." },
-        { year: "2023", title: "20+ Team Members", desc: "Grew our engineering team to more than 20 full-time engineers across 4 specializations." },
-        { year: "2024", title: "50+ Projects Delivered", desc: "Reached a major milestone of 50+ enterprise software projects delivered across Africa." },
-        { year: "2025", title: "International Expansion", desc: "Extended services to clients across East Africa and the Middle East." },
+        { title: "Founded", desc: "PitronTech was founded with a clear purpose: to build enterprise-grade software systems that meet the operational realities and regulatory demands of organizations." },
+        { title: "Evolution", desc: "What began as a focused engineering initiative has evolved into a full-scale enterprise software company delivering ERP platforms, fintech systems, SaaS infrastructure, and cloud-native solutions." },
+        { title: "Early Implementations", desc: "From early implementations in financial institutions to complex multi-module enterprise systems, each project strengthened our commitment to building secure, scalable, and compliance-ready technology." },
+        { title: "Technical Partners", desc: "As regulatory frameworks across Africa continue to mature, we positioned ourselves not just as developers, but as long-term technical partners." },
+        { title: "Standards Alignment", desc: "We architect systems aligned with national standards, banking regulations, and institutional governance requirements." },
+        { title: "Sector Support", desc: "PitronTech supports organizations across finance, government, and private sectors — delivering mission-critical systems that power operations, automate processes, and enable digital transformation." },
+        { title: "Our Principle", desc: "Our journey is driven by one principle: engineering excellence with responsibility." },
     ];
 
     return (
@@ -78,11 +78,10 @@ export default function InsidePage() {
                         <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[rgba(29,80,94,0.2)] to-transparent hidden md:block" />
                         <div className="flex flex-col gap-8">
                             {milestones.map((m, i) => (
-                                <SectionReveal key={m.year} delay={i * 0.06} direction={i % 2 === 0 ? "left" : "right"}>
+                                <SectionReveal key={i} delay={i * 0.06} direction={i % 2 === 0 ? "left" : "right"}>
                                     <div className={`flex flex-col md:flex-row gap-6 items-start ${i % 2 === 0 ? "" : "md:flex-row-reverse"}`}>
                                         <div className={`flex-1 ${i % 2 === 0 ? "md:text-right md:pr-10" : "md:pl-10"}`}>
                                             <div className="glass-card rounded-xl p-5 inline-block w-full hover:border-[rgba(29,80,94,0.2)] transition-all">
-                                                <p className="text-[#1d505e] text-xs font-bold uppercase tracking-wider mb-1">{m.year}</p>
                                                 <h3 className="font-bold text-[var(--text-heading)] mb-1">{m.title}</h3>
                                                 <p className="text-[var(--text-muted)] text-sm">{m.desc}</p>
                                             </div>

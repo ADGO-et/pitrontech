@@ -11,7 +11,7 @@ type IconName = keyof typeof Icons;
 export const metadata: Metadata = {
     title: "About PitronTech",
     description:
-        "Learn about PitronTech: our story, team, culture, and the values that drive us to deliver world-class enterprise software.",
+        "PitronTech is a technology-driven enterprise software company delivering mission-critical systems across finance, government, and private sectors.",
 };
 
 const aboutLinks = [
@@ -41,11 +41,13 @@ export default function AboutPage() {
                             About PitronTech
                         </div>
                         <h1 className="font-display font-black text-5xl md:text-7xl text-[var(--text-heading)] mb-6 leading-tight">
-                            People-First.<br />
-                            <span className="gradient-text">Code-Obsessed.</span>
+                            Who We <span className="gradient-text">Are</span>
                         </h1>
                         <p className="text-[var(--text-muted)] text-xl max-w-2xl mx-auto leading-relaxed">
-                            We are a team of passionate engineers, designers, and strategists building enterprise-grade software that solves real-world problems at scale.
+                            PitronTech is a technology-driven enterprise software company committed to delivering mission-critical systems for organizations across finance, government, and private sectors.
+                        </p>
+                        <p className="text-[var(--text-muted)] text-base max-w-3xl mx-auto leading-relaxed mt-6">
+                            Mission: Empower African enterprises with world-class software systems that improve efficiency, ensure compliance, and enable sustainable growth. Vision: Become the leading enterprise software engineering partner across Africa and beyond.
                         </p>
                     </SectionReveal>
 
