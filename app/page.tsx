@@ -6,6 +6,7 @@ import WorkflowSection from "@/components/home/WorkflowSection";
 import LifecycleSection from "@/components/home/LifecycleSection";
 import SelectedProjects from "@/components/home/SelectedProjects";
 import CultureHighlight from "@/components/home/CultureHighlight";
+import PartnersSection from "@/components/home/PartnersSection";
 // import Testimonials from "@/components/home/Testimonials";
 import CTASection from "@/components/home/CTASection";
 
@@ -24,6 +25,7 @@ export default function HomePage() {
       <WorkflowSection />
       <LifecycleSection />
       <SelectedProjects />
+      <PartnersSection />
       <CultureHighlight />
       {/* <Testimonials /> */}
       <CTASection />

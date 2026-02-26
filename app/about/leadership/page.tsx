@@ -34,7 +34,7 @@ export default function LeadershipPage() {
                         {leaders.map((member, i) => (
                             <SectionReveal key={member.id} delay={i * 0.12} direction="up" className="h-full">
                                 <div className="glass-card rounded-3xl overflow-hidden group hover:border-[rgba(29,80,94,0.25)] transition-all duration-500 hover:shadow-[0_0_60px_rgba(29,80,94,0.08)] hover:-translate-y-2 flex flex-col items-center text-center p-6 h-full">
-                                    <div className="relative w-40 h-40 rounded-full overflow-hidden mb-6 border-4 border-[var(--background)] shadow-lg shrink-0">
+                                    <div className="relative w-48 h-48 rounded-full overflow-hidden mb-6 border-4 border-[var(--background)] shadow-lg shrink-0">
                                         <Image
                                             src={member.image}
                                             alt={member.name}

@@ -49,7 +49,7 @@ export default function TalentPage() {
                         {engineers.map((member, i) => (
                             <SectionReveal key={member.id} delay={i * 0.1} direction="up" className="h-full">
                                 <div className="glass-card rounded-2xl overflow-hidden group hover:border-[rgba(29,80,94,0.2)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(29,80,94,0.08)] flex flex-col items-center text-center p-6 h-full">
-                                    <div className="relative w-32 h-32 rounded-full overflow-hidden mb-5 border-4 border-[var(--background)] shadow-md shrink-0">
+                                    <div className="relative w-40 h-40 rounded-full overflow-hidden mb-5 border-4 border-[var(--background)] shadow-md shrink-0">
                                         <Image src={member.image} alt={member.name} fill className="object-cover object-top group-hover:scale-105 transition-transform duration-500" unoptimized />
                                     </div>
                                     <div className="flex-1 flex flex-col items-center w-full">
