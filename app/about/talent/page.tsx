@@ -48,19 +48,18 @@ export default function TalentPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         {engineers.map((member, i) => (
                             <SectionReveal key={member.id} delay={i * 0.1} direction="up" className="h-full">
-                                <div className="glass-card rounded-2xl overflow-hidden group hover:border-[rgba(29,80,94,0.2)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(29,80,94,0.08)] flex flex-col items-center text-center p-6 h-full">
-                                    <div className="relative w-40 h-40 rounded-full overflow-hidden mb-5 border-4 border-[var(--background)] shadow-md shrink-0">
-                                        <Image src={member.image} alt={member.name} fill className="object-cover object-top group-hover:scale-105 transition-transform duration-500" unoptimized />
-                                    </div>
-                                    <div className="flex-1 flex flex-col items-center w-full">
-                                        <h3 className="font-display font-bold text-[var(--text-heading)] text-lg mb-1">{member.name}</h3>
-                                        <p className="text-[#1d505e] text-xs font-semibold mb-3">{member.role}</p>
-                                        <p className="text-[var(--text-muted)] text-xs leading-relaxed line-clamp-3 mb-4 flex-1">{member.bio}</p>
+                                <div className="glass-card rounded-2xl overflow-hidden group hover:border-[rgba(29,80,94,0.2)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(29,80,94,0.08)] relative h-[400px] flex flex-col justify-end">
+                                    <Image src={member.image} alt={member.name} fill className="object-cover object-top group-hover:scale-105 transition-transform duration-500" unoptimized />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+                                    <div className="relative z-10 p-6 flex flex-col items-start text-left w-full">
+                                        <h3 className="font-display font-bold text-white text-xl mb-1">{member.name}</h3>
+                                        <p className="text-white/90 text-sm font-semibold mb-3">{member.role}</p>
+                                        <p className="text-white/80 text-xs leading-relaxed line-clamp-3 mb-4">{member.bio}</p>
                                         <div className="flex gap-2 mt-auto">
-                                            <a href={member.linkedin} aria-label="LinkedIn" className="w-8 h-8 glass rounded-full flex items-center justify-center text-[var(--text-muted)] hover:text-[#1d505e] hover:bg-[rgba(29,80,94,0.1)] transition-all">
+                                            <a href={member.linkedin} aria-label="LinkedIn" className="w-8 h-8 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all">
                                                 <Linkedin className="w-3.5 h-3.5" />
                                             </a>
-                                            <a href={member.twitter} aria-label="Twitter" className="w-8 h-8 glass rounded-full flex items-center justify-center text-[var(--text-muted)] hover:text-[#1d505e] hover:bg-[rgba(29,80,94,0.1)] transition-all">
+                                            <a href={member.twitter} aria-label="Twitter" className="w-8 h-8 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all">
                                                 <Twitter className="w-3.5 h-3.5" />
                                             </a>
                                         </div>

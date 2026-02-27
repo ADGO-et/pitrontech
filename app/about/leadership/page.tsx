@@ -33,28 +33,29 @@ export default function LeadershipPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
                         {leaders.map((member, i) => (
                             <SectionReveal key={member.id} delay={i * 0.12} direction="up" className="h-full">
-                                <div className="glass-card rounded-3xl overflow-hidden group hover:border-[rgba(29,80,94,0.25)] transition-all duration-500 hover:shadow-[0_0_60px_rgba(29,80,94,0.08)] hover:-translate-y-2 flex flex-col items-center text-center p-6 h-full">
-                                    <div className="relative w-48 h-48 rounded-full overflow-hidden mb-6 border-4 border-[var(--background)] shadow-lg shrink-0">
-                                        <Image
-                                            src={member.image}
-                                            alt={member.name}
-                                            fill
-                                            className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                                            unoptimized
-                                        />
-                                    </div>
-                                    <div className="flex-1 flex flex-col items-center">
-                                        <h2 className="font-display font-bold text-xl text-[var(--text-heading)] mb-1">{member.name}</h2>
-                                        <p className="text-[#1d505e] text-sm font-semibold mb-4">{member.role}</p>
-                                        <p className="text-[var(--text-muted)] text-sm leading-relaxed mb-6 flex-1">{member.bio}</p>
-                                        <div className="flex items-center gap-3 mt-auto">
+                                <div className="glass-card rounded-3xl overflow-hidden group hover:border-[rgba(29,80,94,0.25)] transition-[transform,box-shadow,border-color] duration-200 ease-out hover:shadow-[0_0_60px_rgba(29,80,94,0.08)] hover:-translate-y-2 will-change-transform relative h-[450px] flex flex-col justify-end">
+                                    <Image
+                                        src={member.image}
+                                        alt={member.name}
+                                        fill
+                                        className="object-cover object-top transition-transform duration-300 ease-out group-hover:scale-105"
+                                        unoptimized
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+                                    <div className="relative z-10 p-6 flex flex-col items-start text-left w-full">
+                                        <h2 className="font-display font-bold text-xl text-white mb-1">{member.name}</h2>
+                                        <p className="text-white/90 text-xs font-semibold mb-3">{member.role}</p>
+                                        <p className="text-white/80 text-xs leading-relaxed mb-4 line-clamp-2 max-h-9 overflow-hidden transition-[max-height] duration-200 ease-out group-hover:line-clamp-none group-hover:max-h-36 group-hover:overflow-y-auto pr-1">
+                                            {member.bio}
+                                        </p>
+                                        <div className="flex items-center gap-2 mt-auto">
                                             <a href={member.linkedin} aria-label="LinkedIn"
-                                                className="w-10 h-10 glass rounded-full flex items-center justify-center text-[var(--text-muted)] hover:text-[#1d505e] hover:bg-[rgba(29,80,94,0.1)] transition-all">
-                                                <Linkedin className="w-4 h-4" />
+                                                className="w-8 h-8 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-colors duration-150 ease-out">
+                                                <Linkedin className="w-3.5 h-3.5" />
                                             </a>
                                             <a href={member.twitter} aria-label="Twitter"
-                                                className="w-10 h-10 glass rounded-full flex items-center justify-center text-[var(--text-muted)] hover:text-[#1d505e] hover:bg-[rgba(29,80,94,0.1)] transition-all">
-                                                <Twitter className="w-4 h-4" />
+                                                className="w-8 h-8 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-colors duration-150 ease-out">
+                                                <Twitter className="w-3.5 h-3.5" />
                                             </a>
                                         </div>
                                     </div>

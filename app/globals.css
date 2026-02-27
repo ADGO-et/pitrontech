@@ -136,13 +136,6 @@ body {
   background: #1d505e;
 }
 
-/* === CUSTOM CURSOR === */
-@media (pointer: fine) {
-  body, a, button, [role="button"] {
-    cursor: none !important;
-  }
-}
-
 /* === GLASSMORPHISM === */
 .glass {
   background: var(--glass-bg);

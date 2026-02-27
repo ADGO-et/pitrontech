@@ -5,7 +5,8 @@ export const teamMembers = [
     name: "Kaleab Amaha",
     role: "CEO",
     bio: "Leads the company's strategic direction, partnerships, and growth, ensuring technology solutions deliver measurable impact across industries.",
-    image: "/api/images/kaleab",
+    image:
+      "https://res.cloudinary.com/dwmyfq2fw/image/upload/v1772184477/kaleab_oik51e.jpg",
     department: "leadership",
     linkedin: "https://www.linkedin.com/in/kaleab-amaha-910329234",
     twitter: "#",

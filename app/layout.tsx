@@ -3,7 +3,6 @@ import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import CustomCursor from "@/components/shared/CustomCursor";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -85,7 +84,6 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased min-h-screen flex flex-col bg-background text-foreground">
-        <CustomCursor />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
