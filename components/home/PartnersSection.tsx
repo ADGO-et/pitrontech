@@ -5,9 +5,6 @@ import { useEffect, useState } from "react";
 import { partners, type Partner } from "@/lib/data/partners";
 
 export default function PartnersSection() {
-    // Double the array to create a seamless infinite scroll effect
-    const doubled = [...partners, ...partners];
-
     return (
         <section className="py-20 relative overflow-hidden border-y border-[rgba(29,80,94,0.06)] bg-[var(--background)]">
             {/* Gradient masks for smooth fade in/out on edges */}
@@ -26,10 +23,10 @@ export default function PartnersSection() {
                 </p>
             </div>
 
-            {/* Marquee Track */}
-            <div className="relative flex overflow-hidden">
-                <div className="animate-marquee flex gap-12 md:gap-20 items-center flex-shrink-0 py-4">
-                    {doubled.map((partner, i) => (
+            {/* Static Grid */}
+            <div className="max-w-5xl mx-auto px-6">
+                <div className="flex flex-wrap justify-center gap-12 md:gap-20 items-center py-4">
+                    {partners.map((partner, i) => (
                         <PartnerLogo key={`partner-${i}`} partner={partner} />
                     ))}
                 </div>
@@ -70,7 +67,7 @@ function PartnerLogo({ partner }: { partner: Partner }) {
     // Prevent hydration mismatch by not rendering the image until mounted
     if (!mounted) {
         return (
-            <div className="flex-shrink-0 flex items-center justify-center w-52 h-28 md:w-56 md:h-32 opacity-90 hover:opacity-100 transition-all duration-300 cursor-pointer group">
+            <div className="flex items-center justify-center w-52 h-28 md:w-56 md:h-32 opacity-90 hover:opacity-100 transition-all duration-300 cursor-pointer group">
                 <div className="relative w-full h-full flex items-center justify-center">
                     {/* Empty placeholder with same dimensions to prevent layout shift */}
                 </div>
@@ -81,7 +78,7 @@ function PartnerLogo({ partner }: { partner: Partner }) {
     const logoSrc = isDark && partner.darkLogo ? partner.darkLogo : partner.logo;
 
     const content = (
-        <div className="flex-shrink-0 flex items-center justify-center w-52 h-28 md:w-56 md:h-32 opacity-90 hover:opacity-100 transition-all duration-300 cursor-pointer group">
+        <div className="flex items-center justify-center w-52 h-28 md:w-56 md:h-32 opacity-90 hover:opacity-100 transition-all duration-300 cursor-pointer group">
             <div className="relative w-full h-full flex items-center justify-center">
                 <Image
                     src={logoSrc}

@@ -16,10 +16,6 @@ export const partners: Partner[] = [
     logo: "/partners/noble_logo.svg",
   },
   {
-    name: "WebSprix",
-    logo: "/partners/websprix_logo.png",
-  },
-  {
     name: "Yehulu Saccos",
     logo: "/partners/yehulusaccos_logo.png",
     darkLogo: "/partners/yehulusaccos_logo_dark.png",
