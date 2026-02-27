@@ -187,7 +187,7 @@ export const teamMembers = [
     name: "Nesredin Awel Seid",
     role: "UI/UX Designer and Researcher",
     bio: "Designs professional and user-centered UI/UX solutions and conducts research to enhance product usability and experience.",
-    image: "https://avatar.iran.liara.run/public/boy?username=Nesredin",
+    image: "/api/images/nesredin",
     department: "engineering",
     linkedin: "https://www.linkedin.com/in/nesredin-awel-nas-4914ba232",
     github: "https://github.com/Nesredinawel",

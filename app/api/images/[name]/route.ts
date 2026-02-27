@@ -17,7 +17,7 @@ const imageUrls: Record<string, string> = {
   mailaf:
     "https://res.cloudinary.com/dwmyfq2fw/image/upload/v1772173908/mailaf_y08wfg.jpg",
   kaleab:
-    "https://res.cloudinary.com/dwmyfq2fw/image/upload/v1772173891/kaleab_olsqjg.jpg",
+    "https://res.cloudinary.com/dwmyfq2fw/image/upload/v1772191781/kaleab_eagrxu.jpg",
   abraham:
     "https://res.cloudinary.com/dwmyfq2fw/image/upload/v1772173870/abraham_r7ew4q.jpg",
   yared:
@@ -28,6 +28,8 @@ const imageUrls: Record<string, string> = {
     "https://res.cloudinary.com/dwmyfq2fw/image/upload/v1772173846/duresa_tf7okr.jpg",
   adnan:
     "https://res.cloudinary.com/dwmyfq2fw/image/upload/v1772173852/adnan_jbcgua.jpg",
+  nesredin: 
+    "https://res.cloudinary.com/dwmyfq2fw/image/upload/v1772191622/nesredin_pobwmc.jpg"
 };
 
 export async function GET(
